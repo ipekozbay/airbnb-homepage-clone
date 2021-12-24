@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #ff385c;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    margin-top: 2em;
+}
+
+header svg {
+    fill: var(--primary-color);
+}
+
+header .container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color:#444;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1em .8em;
+}
+
+header a:hover{
+
+    background: #f7f7f7;;
+    border-radius: 2em;
+
+}
