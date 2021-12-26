@@ -1,62 +1,90 @@
 :root {
-    --primary-color: #ff385c;
+  --primary-color: #ff385c;
 }
 
 html,
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 .container {
-    width: 1030px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 header svg {
-    fill: var(--primary-color);
+  fill: var(--primary-color);
 }
 
 header .container > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header a {
-    color:#444;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 1em .8em;
-    border-radius: 2em; 
+  color: #444;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1em 0.8em;
+  border-radius: 2em;
 }
 
-
-
-header a.nav-item:hover{
-    background: #f7f7f7;;
-
+header a.nav-item:hover {
+  background: #f7f7f7;
 }
 
-header nav{
-    display: flex;
+header nav {
+  display: flex;
 }
 
 #sign-up-button {
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18) !important;
-    transition: box-shadow 0.2s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18) !important;
+  transition: box-shadow 0.2s;
 }
 
-#sign-up-botton.hover{
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12) !important;
-
+#sign-up-botton.hover {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12) !important;
 }
+
+#dropdown-container {
+  position: relative;
+}
+
 #dropdown-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dropdown-button > img {
+  margin-right: 0.3em;
+}
+
+#dropdown-menu {
+  position: absolute;
+  right: 0;
+  min-width: 150px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18) !important;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  display: none;
+}
+
+#dropdown-menu a {
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+}
+
+#dropdown-menu a img {
+  margin-right: 0.3em;
 }
