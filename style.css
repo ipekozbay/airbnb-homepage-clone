@@ -132,20 +132,20 @@ position: relative;
 
 .search-buttons button:nth-child(1).active ~ .menu-indicator {
   left: 0;
-  width: 95px;
-}
-
-.search-buttons button:nth-child(2).active ~ .menu-indicator {
-  left: 104px;
-  width: 99px;
-}
-
-.search-buttons button:nth-child(3).active ~ .menu-indicator {
-  left: 211px;
   width: 88px;
 }
 
+.search-buttons button:nth-child(2).active ~ .menu-indicator {
+  left: 90px;
+  width: 85px;
+}
+
+.search-buttons button:nth-child(3).active ~ .menu-indicator {
+  left: 192px;
+  width: 79px;
+}
+
 .search-buttons button:nth-child(4).active ~ .menu-indicator {
-  left: 309px;
-  width: 178px;
+  left: 280px;
+  width: 155px;
 }
