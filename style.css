@@ -88,3 +88,64 @@ header nav {
 #dropdown-menu a img {
   margin-right: 0.3em;
 }
+
+.search-container {
+  margin-top: 4em;
+}
+
+.search-buttons button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: .5em;
+  outline: none;
+  
+}
+
+.search-buttons button:hover{
+  color: #717171 !important;
+}
+
+.search-buttons button span {
+  background: #444;
+  color: white;
+  padding: .2em .5em;
+  font-size: .8em;
+  border-radius: 0.7em;
+}
+
+.search-container {
+position: relative;
+
+}
+
+.menu-indicator {
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-bottom: 2px solid black;
+  width: 90px;
+  transition: all 0.5s;
+
+}
+
+.search-buttons button:nth-child(1).active ~ .menu-indicator {
+  left: 0;
+  width: 95px;
+}
+
+.search-buttons button:nth-child(2).active ~ .menu-indicator {
+  left: 104px;
+  width: 99px;
+}
+
+.search-buttons button:nth-child(3).active ~ .menu-indicator {
+  left: 211px;
+  width: 88px;
+}
+
+.search-buttons button:nth-child(4).active ~ .menu-indicator {
+  left: 309px;
+  width: 178px;
+}

@@ -1,6 +1,9 @@
 const dropdownButton = document.getElementById("dropdown-button");
 const dropdownMenu = document.getElementById("dropdown-menu");
 
+const searchButtons = document.querySelectorAll('.search-buttons button ');
+
+
 document.addEventListener("click", function (event) {
   if (dropdownButton.contains(event.target)) {
     return;
@@ -23,3 +26,10 @@ dropdownButton.addEventListener("click", function (event) {
     dropdownMenu.dataset.state = "closed";
   }
 });
+
+searchButtons.forEach(button => {
+  button.addEventListener('click', function(event){
+    searchButtons.forEach(button => button.classList.remove('active'));
+    event.target.classList.add('active');
+  })
+})
