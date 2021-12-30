@@ -98,26 +98,28 @@ header nav {
   border: none;
   padding: 0;
   cursor: pointer;
-  margin-right: .5em;
+  margin-right: 0.5em;
   outline: none;
-  
 }
 
-.search-buttons button:hover{
+.search-buttons button:hover {
   color: #717171 !important;
 }
 
 .search-buttons button span {
   background: #444;
   color: white;
-  padding: .2em .5em;
-  font-size: .8em;
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
   border-radius: 0.7em;
 }
 
 .search-container {
-position: relative;
+  position: relative;
+}
 
+.search-buttons {
+  position: relative;
 }
 
 .menu-indicator {
@@ -127,7 +129,6 @@ position: relative;
   border-bottom: 2px solid black;
   width: 90px;
   transition: all 0.5s;
-
 }
 
 .search-buttons button:nth-child(1).active ~ .menu-indicator {
@@ -149,3 +150,60 @@ position: relative;
   left: 280px;
   width: 155px;
 }
+
+.search-inputs {
+  display: flex;
+  margin-top: 2em;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+}
+
+.search-inputs div {
+  flex-grow: 1;
+  padding: 1em;
+  position: relative;
+}
+
+.search-inputs .input-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid #ccc;
+  z-index: -1;
+}
+
+.search-inputs .input-item:first-of-type {
+  border-left: none;
+}
+
+.search-inputs .input-item:hover:before {
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.search-inputs .input-item:hover + .input-item:before {
+  display: none;
+}
+
+.search-inputs .location {
+  flex-grow: 2;
+}
+
+.search-inputs label {
+  display: block;
+  margin-bottom: .4em;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.search-inputs input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
